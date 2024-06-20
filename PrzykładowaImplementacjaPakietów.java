@@ -1,4 +1,4 @@
-//Klasa Shape (w pakiecie com.example.shapes)
+//Klasa Shape (w pakiecie com.example.shapes)____________________________________________________________________________________________________________________________________________________________________________________________
 
 
 package com.example.shapes;
@@ -16,7 +16,7 @@ public abstract class Shape {
 }
 
 
-//Klasa Circle (w pakiecie com.example.shapes)
+//Klasa Circle (w pakiecie com.example.shapes)____________________________________________________________________________________________________________________________________________________________________________________________
 
 
 package com.example.shapes;
@@ -38,7 +38,7 @@ public class Circle extends Shape {
 }
 
 
-Klasa MainApp (w pakiecie com.example.main)
+//Klasa MainApp (w pakiecie com.example.main)____________________________________________________________________________________________________________________________________________________________________________________________
 
 
 package com.example.main;
