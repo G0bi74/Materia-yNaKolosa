@@ -1,0 +1,18 @@
+Opis kodu:
+Serwer:
+
+Serwer nasłuchuje na określonym porcie: Serwer tworzy ServerSocket na określonym porcie i nasłuchuje połączeń.
+Akceptowanie połączeń: Gdy serwer akceptuje połączenie od klienta, tworzy Socket do komunikacji z tym klientem.
+Odczytywanie i wysyłanie wiadomości: Serwer odczytuje wiadomości od klienta i wysyła odpowiedzi za pomocą BufferedReader i PrintWriter.
+Klient:
+
+Łączenie się z serwerem: Klient tworzy Socket do połączenia z serwerem na określonym hostie i porcie.
+Wysyłanie wiadomości: Klient wysyła wiadomości do serwera za pomocą PrintWriter.
+Odbieranie odpowiedzi: Klient odbiera odpowiedzi od serwera za pomocą BufferedReader.
+Wielowątkowość:
+
+Obsługa wielu klientów: Wielowątkowy serwer tworzy nowy wątek dla każdego połączenia klienta, co umożliwia równoczesne obsługiwanie wielu klientów.
+Klasa ClientHandler: Każdy klient jest obsługiwany przez oddzielny wątek, który implementuje interfejs Runnable.
+Uwagi:
+Gniazda (Sockets): Są podstawowym sposobem komunikacji międzyklientowej w Javie, umożliwiającym bezpośrednią wymianę danych między aplikacjami.
+Wielowątkowość: Jest kluczowa dla serwerów, które muszą obsługiwać wielu klientów jednocześnie. Tworzenie oddzielnych wątków dla każdego klienta pozwala na równoczesne przetwarzanie wielu żądań.
