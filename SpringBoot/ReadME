@@ -1,0 +1,15 @@
+2.3 Uruchomienie aplikacji
+Aby uruchomić aplikację Spring Boot, wystarczy uruchomić główną klasę SpringBootExampleApplication, która automatycznie uruchomi wbudowany serwer Tomcat i będzie nasłuchiwać na porcie 8080.
+
+Opis kodu:
+Serwlety:
+
+Klasa HelloServlet: Klasa dziedziczy po HttpServlet i implementuje metodę doGet(), która obsługuje żądania HTTP GET. Odpowiedź jest generowana jako strona HTML.
+Plik web.xml: Plik konfiguracyjny mapujący serwlet na określony URL (/hello).
+Spring Boot:
+
+Klasa SpringBootExampleApplication: Główna klasa aplikacji Spring Boot z adnotacją @SpringBootApplication, która uruchamia aplikację.
+Klasa HelloController: Kontroler Spring Boot z adnotacją @RestController, który obsługuje żądania GET na endpoint /hello. Metoda sayHello() przyjmuje opcjonalny parametr zapytania name i zwraca powitanie.
+Uwagi:
+Serwlety: Są podstawowym sposobem tworzenia dynamicznych stron internetowych w Javie, obsługując bezpośrednio żądania i odpowiedzi HTTP.
+Spring Boot: Ułatwia tworzenie aplikacji webowych, zarządzanie konfiguracją i uruchamianie wbudowanego serwera aplikacji.
